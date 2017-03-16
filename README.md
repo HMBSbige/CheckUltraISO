@@ -1,7 +1,7 @@
 # CheckUltraISO
 From https://github.com/yufengzjj/PoCUltraISOKeyGen
 
-**注意：** UltraISO有简体中文版和多语言版，本程序的多语言版的注册模拟
+**注意：** UltraISO有简体中文版和多语言版，本程序为多语言版的注册模拟
 ## UltraISO注册表位置
 ```
 HKEY_CURRENT_USER\SOFTWARE\EasyBoot Systems\UltraISO
