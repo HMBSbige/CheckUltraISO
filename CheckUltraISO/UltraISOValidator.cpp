@@ -1,7 +1,7 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 #include "hash.h"
-#include "third_party\freelip-1.1\lip.h"
+#include "third_party/freelip-1.1/lip.h"
 #include "constdef.h"
 
 static char modulus_n[] = "A70F8F62AA6E97D1";
@@ -12,7 +12,6 @@ static char UTRISO_str[] = "UTRISO";
 static char REGCODE_str[] = "4BA90D54214AC938";
 void RSA_decrypt(char* encrypted_data)
 {
-
     std::string regcode;
     regcode.resize(64);
 
@@ -49,11 +48,11 @@ void validate()
 	long* b = nullptr;
 	long* c = nullptr;
 	long* d = nullptr;
-	int flag = 0;
+	auto flag = 0;
 	std::string operated_regcode;
 	operated_regcode.resize(56);
-	int seat_num = 0;
-	int seat_c = 0;
+	auto seat_num = 0;
+	auto seat_c = 0;
 
 	std::string regcode;
 	std::string name;
@@ -98,7 +97,7 @@ void validate()
 						seat_c += operated_regcode[15] - '0';
 					else
 						seat_c += operated_regcode[15] - 'W';
-					seat_c -= 32;
+					//seat_c -= 32;
 					if (operated_regcode[8] < 'a')
 						seat_num = operated_regcode[8] - '0';
 					else
@@ -153,8 +152,8 @@ void validate()
 			--flag;
 		flag -= 2;
 		int len_data = 52413;
-		int i = 0;
-		int index = 0;
+		auto i = 0;
+		auto index = 0;
 		do
 		{
 
@@ -180,7 +179,7 @@ void validate()
 			}
 		} while (i <= len_data);
 		std::cout << "last compared data: ";
-		for (int i = 0; i < 6; i++)
+		for (i = 0; i < 6; ++i)
 		{
 			printf("%02X", data[6 * index + i]);
 		}

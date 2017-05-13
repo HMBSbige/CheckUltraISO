@@ -1,5 +1,4 @@
 #include "hash.h"
-#include <cstring>
 
 const char* HASH::operator()(const char* data, const char* type, unsigned int data_len)
 {

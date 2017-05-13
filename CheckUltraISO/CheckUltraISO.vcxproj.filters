@@ -24,13 +24,13 @@
     <ClInclude Include="FASTRSA64.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="constdef.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="hash.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="third_party\freelip-1.1\lip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="constdef.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

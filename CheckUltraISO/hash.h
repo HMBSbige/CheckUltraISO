@@ -1,6 +1,5 @@
 #pragma once
 #include <openssl/evp.h>
-#include <string>
 #include "MutexBlock.h"
 class HASH
 {
