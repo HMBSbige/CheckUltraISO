@@ -21,7 +21,7 @@ const unsigned char* HASH::hash(const char* data, const char* type, unsigned int
     unsigned char * md_value = const_cast<unsigned char*>(m_mtxb_mdvalue.block_acquire());
     EVP_MD_CTX *mdctx = EVP_MD_CTX_create();
     const EVP_MD* md = EVP_get_digestbyname(type);
-    EVP_DigestInit_ex(mdctx, md, NULL);
+    EVP_DigestInit_ex(mdctx, md, nullptr);
     EVP_DigestUpdate(mdctx, data, data_len);
     EVP_DigestFinal_ex(mdctx, md_value, &len);
     EVP_MD_CTX_destroy(mdctx);

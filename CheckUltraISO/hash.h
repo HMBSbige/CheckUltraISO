@@ -16,9 +16,10 @@ public:
         /* Call this once before exit. */
         EVP_cleanup();
     }
-    void upperStr(char* str);
-    void lowerStr(char* str);
-    void hex2str(char* dest, unsigned int hex);
+
+	static void upperStr(char* str);
+	static void lowerStr(char* str);
+	static void hex2str(char* dest, unsigned int hex);
     const char* operator()(const char* data, const char* type, unsigned int data_len = 0);
     const unsigned char* hash(const char* data, const char* type, unsigned int &len, unsigned int data_len = 0);
     void release_hash_str(const char*);

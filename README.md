@@ -34,7 +34,7 @@ HKEY_CURRENT_USER\SOFTWARE\EasyBoot Systems\UltraISO
 ```
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
 cd c:\openssl-*\
-perl Configure VC-WIN64A
+perl Configure VC-WIN64A	或	perl Configure debug-VC-WIN64A
 ms\do_win64a.bat
 nmake -f ms\nt.mak
 nmake -f ms\nt.mak test
